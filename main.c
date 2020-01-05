@@ -12,20 +12,27 @@
 /* ************************************************************************** */
 
 #include "libasm.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int main(void)
 {
     char *src = "salut";
     char *dst;
+    char *dup;
+    char *dst2;
 
     dst = malloc(6);
+    dst2 = calloc(6, 1);
 
     printf("strlen : %d\n", ft_strlen(src));
     printf("copy : %s, dst : %s, src : %s\n", ft_strcpy(dst, src), dst, src);
     printf("cmp : %d\n", ft_strcmp("sf", "sbl~"));
     printf("cmp : %d\n", strcmp("sf", "sbl~"));
+    printf("write return : %d\n", ft_write(1, "yo\n", 3));
+    int fd = open("test", O_RDONLY);
+    printf("read return : %d, read : %s\n", ft_read(fd, dst2, 6), dst2);
+    dup = ft_strdup("bonjour");
+    printf("strdup : %s", dup);
+    free(dup);
 
 
     return (0);
