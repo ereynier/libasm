@@ -16,5 +16,6 @@
 
 extern int ft_strlen(char *str);
 extern char *ft_strcpy(char *dest, char *src);
+extern int ft_strcmp(char *s1, char *s2);
 
 #endif

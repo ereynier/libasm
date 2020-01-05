@@ -24,6 +24,9 @@ int main(void)
 
     printf("strlen : %d\n", ft_strlen(src));
     printf("copy : %s, dst : %s, src : %s\n", ft_strcpy(dst, src), dst, src);
+    printf("cmp : %d\n", ft_strcmp("sf", "sbl~"));
+    printf("cmp : %d\n", strcmp("sf", "sbl~"));
+
 
     return (0);
 }
