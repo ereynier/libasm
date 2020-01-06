@@ -6,16 +6,17 @@
 #    By: ereynier <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/08 18:19:15 by ereynier     #+#   ##    ##    #+#        #
-#    Updated: 2019/10/26 11:49:29 by ereynier    ###    #+. /#+    ###.fr      #
+#    Updated: 2020/01/06 12:29:12 by ereynier    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
-SRCS	= ft_strlen.s ft_strcpy.s ft_strcmp.s ft_write.s ft_read.s ft_strdup.s
+SRCS	= 	srcs/ft_strlen.s srcs/ft_strcpy.s srcs/ft_strcmp.s srcs/ft_write.s \
+			srcs/ft_read.s srcs/ft_strdup.s
 
 OBJS	= ${SRCS:.s=.o}
 
-INCS	=  
+INCS	= libasm.h 
 
 NAME	= libasm.a
 
